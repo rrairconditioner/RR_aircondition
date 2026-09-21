@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RR Aircondition & Refrigeration Services - AC repair, service, installation, gas filling, water leakage repair and maintenance in Visakhapatnam.">
+<title>RR Aircondition | AC Repair & Refrigeration Services</title>
+<style>
+:root{
+  --navy:#07366f; --blue:#0878d1; --sky:#eaf7ff; --green:#16b957;
+  --ink:#092b52; --muted:#5d7085; --white:#fff; --line:#dce8f3;
+  --shadow:0 14px 35px rgba(4,53,103,.12); --radius:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+.topbar{background:var(--navy);color:#fff;font-size:14px}
+.topbar .container{display:flex;justify-content:space-between;gap:20px;padding:9px 0;align-items:center}
+.top-actions{display:flex;gap:20px;align-items:center}
+.header{background:#fff;position:sticky;top:0;z-index:20;box-shadow:0 4px 20px rgba(0,0,0,.06)}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-mark{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#0b7bd2,#07366f);color:#fff;font-weight:900;font-size:22px}
+.logo strong{font-size:23px;display:block;color:#0b376c}
+.logo span{font-size:12px;color:#52708c;font-weight:700}
+.menu{display:flex;gap:30px;font-weight:700;font-size:14px}
+.menu a:hover{color:var(--blue)}
+.nav-cta{background:var(--blue);color:#fff;padding:12px 19px;border-radius:999px;font-weight:800}
+.hero{background:linear-gradient(120deg,#effaff 0%,#dff3ff 55%,#c4e8ff 100%);overflow:hidden}
+.hero .container{min-height:570px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:30px}
+.eyebrow{font-weight:900;color:#075ca8;letter-spacing:.5px;margin-bottom:12px}
+.hero h1{font-size:clamp(42px,5.5vw,70px);line-height:1.03;letter-spacing:-2px;margin-bottom:18px}
+.hero h1 span{color:var(--blue)}
+.hero p{font-size:18px;color:#52697e;max-width:570px}
+.buttons{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 20px;border-radius:13px;font-weight:900}
+.btn-primary{background:var(--navy);color:#fff}
+.btn-green{background:var(--green);color:#fff}
+.btn-outline{background:#fff;border:2px solid var(--blue);color:var(--blue)}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:20px}
+.trust div{background:rgba(255,255,255,.75);border:1px solid #cde5f5;border-radius:14px;padding:12px;font-size:12px;font-weight:800}
+.hero-art{min-height:450px;border-radius:35px;position:relative;display:grid;place-items:center}
+.ac-unit{width:82%;height:125px;background:#fff;border-radius:18px;box-shadow:0 25px 40px rgba(5,65,120,.18);position:relative}
+.ac-unit:before{content:"";position:absolute;left:8%;right:8%;bottom:24px;height:4px;background:#b9cfe0;border-radius:5px;box-shadow:0 10px 0 #cfe0ec,0 20px 0 #dce8f1}
+.air{position:absolute;top:125px;width:60%;height:190px;background:linear-gradient(#9bdcff55,transparent);clip-path:polygon(10% 0,90% 0,100% 100%,0 100%);filter:blur(2px)}
+.tech{position:absolute;bottom:15px;right:8%;width:180px;height:250px;background:linear-gradient(#103e72 0 52%,#0b6db8 52%);border-radius:90px 90px 18px 18px;box-shadow:0 20px 35px #07457a33}
+.tech:before{content:"";position:absolute;width:88px;height:88px;border-radius:50%;background:#b97855;top:-50px;left:46px}
+.badge{position:absolute;right:4%;top:12%;background:#fff;border-radius:20px;padding:18px;box-shadow:var(--shadow);font-weight:900;color:#075ca8}
+section{padding:78px 0}
+.section-head{text-align:center;max-width:700px;margin:0 auto 38px}
+.section-head h2{font-size:38px;line-height:1.1;margin-bottom:9px}
+.section-head p{color:var(--muted)}
+.services{background:#fff}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:#fff;box-shadow:0 8px 25px rgba(4,53,103,.05);transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.icon{width:50px;height:50px;border-radius:15px;background:#e8f5ff;color:var(--blue);display:grid;place-items:center;font-size:24px;margin-bottom:15px}
+.card h3{margin-bottom:7px}
+.card p{color:var(--muted);font-size:14px}
+.why{background:linear-gradient(120deg,#06376f,#0868b7);color:#fff}
+.why .section-head p{color:#d9edff}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.points{display:grid;gap:18px}
+.point{display:flex;gap:14px;align-items:flex-start}
+.point .icon{flex:none;background:rgba(255,255,255,.15);color:#fff}
+.point p{color:#d6eaff;font-size:14px}
+.panel{background:#fff;color:var(--ink);border-radius:30px;padding:30px;box-shadow:0 20px 45px rgba(0,0,0,.14)}
+.panel h3{font-size:25px;margin-bottom:15px}
+.brands{display:flex;flex-wrap:wrap;gap:10px}
+.brand{border:1px solid var(--line);padding:10px 13px;border-radius:12px;font-weight:900;background:#f8fbfd}
+.about{background:#f7fbff}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.about-box{background:linear-gradient(135deg,#dff3ff,#fff);min-height:320px;border-radius:30px;display:grid;place-items:center;font-size:70px;box-shadow:var(--shadow)}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.review{background:#fff;border:1px solid var(--line);padding:24px;border-radius:20px}
+.stars{color:#f3ad00;letter-spacing:2px}
+.review p{margin:12px 0;color:#52697e;font-size:14px}
+.contact{background:#fff}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:25px}
+.contact-card,.map{border:1px solid var(--line);border-radius:25px;padding:28px;box-shadow:var(--shadow)}
+.contact-row{display:flex;gap:13px;margin:20px 0}
+.contact-row b{display:block}
+.contact-row span{color:var(--muted);font-size:14px}
+.map{background:linear-gradient(135deg,#dff2ff,#f6fbff);min-height:310px;display:grid;place-items:center;text-align:center}
+.map-pin{font-size:52px}
+.footer{background:#062d5a;color:#dbeeff;padding:40px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+.footer h3{color:#fff;margin-bottom:12px}
+.footer p,.footer a{font-size:14px;color:#bcd5eb}
+.copyright{border-top:1px solid #ffffff22;margin-top:30px;padding-top:18px;text-align:center;font-size:12px}
+.float{position:fixed;right:20px;bottom:20px;z-index:50;display:flex;flex-direction:column;gap:10px}
+.float a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:22px;box-shadow:0 8px 25px rgba(0,0,0,.2)}
+.call{background:#0b65bd}.wa{background:#16b957}
+@media(max-width:900px){
+ .menu{display:none}.nav-cta{display:none}
+ .hero .container,.why-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+ .hero .container{padding:55px 0}.hero-art{min-height:360px}
+ .grid{grid-template-columns:repeat(2,1fr)}
+ .reviews{grid-template-columns:1fr}
+ .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+ .topbar .container{font-size:11px}.top-actions{gap:8px}
+ .logo strong{font-size:18px}.logo-mark{width:44px;height:44px}
+ .hero h1{font-size:43px}.hero p{font-size:16px}
+ .trust{grid-template-columns:repeat(2,1fr)}
+ .grid{grid-template-columns:1fr}
+ section{padding:55px 0}
+ .section-head h2{font-size:30px}
+ .footer-grid{grid-template-columns:1fr}
+ .hero-art{min-height:300px}
+}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><div>📍 Midhilapuri VUDA Colony, Pothinamallayya Palem, Madhurawada, Visakhapatnam</div><div class="top-actions"><a href="tel:9848321205">☎ 9848321205</a><a href="https://wa.me/919848321205" target="_blank">💬 WhatsApp</a></div></div></div>
+
+<header class="header"><div class="container nav">
+<a class="logo" href="#home"><div class="logo-mark">RR</div><div><strong>RR AIRCONDITION</strong><span>Repair & Refrigeration Services</span></div></a>
+<nav class="menu"><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About Us</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav>
+<a class="nav-cta" href="tel:9848321205">Call Now</a>
+</div></header>
+
+<main id="home">
+<section class="hero"><div class="container">
+<div>
+<div class="eyebrow">AC REPAIR • SERVICE • INSTALLATION • GAS FILLING</div>
+<h1>AC Cooling Problem?<br><span>We Come To You!</span></h1>
+<p>Fast, reliable and professional AC repair and refrigeration services for homes and offices. Service for all major AC brands and models.</p>
+<div class="buttons">
+<a class="btn btn-primary" href="tel:9848321205">☎ Call Now</a>
+<a class="btn btn-green" href="https://wa.me/919848321205" target="_blank">💬 WhatsApp Now</a>
+<a class="btn btn-outline" href="#contact">📅 Book Service</a>
+</div>
+<div class="trust"><div>✓ All Brands & Models</div><div>✓ On-Time Service</div><div>✓ Affordable Pricing</div><div>✓ Experienced Technicians</div></div>
+</div>
+<div class="hero-art"><div class="badge">❄️ Cool Comfort<br>Always</div><div class="air"></div><div class="ac-unit"></div><div class="tech"></div></div>
+</div></section>
+
+<section id="services" class="services"><div class="container">
+<div class="section-head"><h2>Our Services</h2><p>Complete AC solutions under one roof.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">🔧</div><h3>AC Repair & Service</h3><p>Quick and reliable troubleshooting for AC cooling and performance problems.</p></div>
+<div class="card"><div class="icon">🧼</div><h3>AC Jet Cleaning</h3><p>Deep cleaning to improve airflow, hygiene and cooling performance.</p></div>
+<div class="card"><div class="icon">💨</div><h3>Gas Filling</h3><p>AC refrigerant service for cooling performance when required.</p></div>
+<div class="card"><div class="icon">💧</div><h3>Water Leakage Repair</h3><p>Inspection and repair for common indoor AC water leakage issues.</p></div>
+<div class="card"><div class="icon">🔌</div><h3>PCB Repair</h3><p>AC electronics and PCB troubleshooting and repair service.</p></div>
+<div class="card"><div class="icon">🏠</div><h3>AC Installation</h3><p>Professional installation and setup for split and other AC systems.</p></div>
+<div class="card"><div class="icon">↔️</div><h3>AC Shifting</h3><p>Safe AC relocation and reinstallation service.</p></div>
+<div class="card"><div class="icon">⚙️</div><h3>General Maintenance</h3><p>Routine care to help keep your AC working efficiently.</p></div>
+<div class="card"><div class="icon">♻️</div><h3>Old AC Buying</h3><p>Enquire about selling your old AC and receive a service response.</p></div>
+</div></div></section>
+
+<section class="why"><div class="container">
+<div class="section-head"><h2>Why Choose RR Aircondition?</h2><p>Professional service focused on comfort, clarity and convenience.</p></div>
+<div class="why-grid">
+<div class="points">
+<div class="point"><div class="icon">⚡</div><div><h3>Fast Service</h3><p>We value your time and aim for prompt service.</p></div></div>
+<div class="point"><div class="icon">👨‍🔧</div><div><h3>Experienced Technicians</h3><p>Skilled technicians for common AC service and repair needs.</p></div></div>
+<div class="point"><div class="icon">₹</div><div><h3>Affordable Pricing</h3><p>Clear service communication before work begins.</p></div></div>
+<div class="point"><div class="icon">❄️</div><div><h3>All AC Models</h3><p>Split, window, cassette, inverter and more.</p></div></div>
+</div>
+<div class="panel"><h3>Serving Major AC Brands</h3><div class="brands"><span class="brand">Daikin</span><span class="brand">LG</span><span class="brand">Samsung</span><span class="brand">Voltas</span><span class="brand">Hitachi</span><span class="brand">Haier</span><span class="brand">Panasonic</span><span class="brand">Carrier</span><span class="brand">Godrej</span></div></div>
+</div></div></section>
+
+<section id="about" class="about"><div class="container about-grid">
+<div><div class="section-head" style="text-align:left;margin:0 0 20px"><h2>About RR Aircondition</h2></div><p>RR Aircondition & Refrigeration Services provides AC repair, service and installation support in Visakhapatnam. The website is designed to make it easy for customers to call, WhatsApp or request service.</p><div class="buttons"><a class="btn btn-primary" href="tel:9848321205">Talk to Us →</a></div></div>
+<div class="about-box">❄️<br><small style="font-size:18px">Your Comfort, Our Priority</small></div>
+</div></section>
+
+<section id="reviews"><div class="container"><div class="section-head"><h2>Customer Reviews</h2><p>Real customer experiences can be displayed here.</p></div>
+<div class="reviews">
+<div class="review"><div class="stars">★★★★★</div><p>“Excellent service. The technician came on time and fixed the issue quickly.”</p><b>— Customer</b></div>
+<div class="review"><div class="stars">★★★★★</div><p>“Professional response and clear communication about the service.”</p><b>— Customer</b></div>
+<div class="review"><div class="stars">★★★★★</div><p>“Good AC service experience. Easy to contact through WhatsApp.”</p><b>— Customer</b></div>
+</div></div></section>
+
+<section id="contact" class="contact"><div class="container"><div class="section-head"><h2>Contact RR Aircondition</h2><p>Call or WhatsApp us to discuss your AC service requirement.</p></div>
+<div class="contact-grid">
+<div class="contact-card">
+<div class="contact-row"><div>📞</div><div><b>Phone / WhatsApp</b><span>9848321205</span></div></div>
+<div class="contact-row"><div>📍</div><div><b>Address</b><span>Midhilapuri VUDA Colony, Pothinamallayya Palem, Madhurawada, Visakhapatnam – 530041</span></div></div>
+<div class="buttons"><a class="btn btn-primary" href="tel:9848321205">Call Now</a><a class="btn btn-green" href="https://wa.me/919848321205" target="_blank">WhatsApp</a></div>
+</div>
+<div class="map"><div><div class="map-pin">📍</div><h3>Service Location</h3><p>Midhilapuri VUDA Colony<br>Pothinamallayya Palem, Madhurawada<br>Visakhapatnam – 530041</p><br><a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Midhilapuri%20VUDA%20Colony%20Pothinamallayya%20Palem%20Visakhapatnam" target="_blank">Open Google Maps</a></div></div>
+</div></div></section>
+</main>
+
+<footer class="footer"><div class="container footer-grid">
+<div><h3>RR AIRCONDITION</h3><p>Repair & Refrigeration Services. AC repair, service, installation and maintenance support.</p></div>
+<div><h3>Quick Links</h3><p><a href="#home">Home</a></p><p><a href="#services">Services</a></p><p><a href="#about">About Us</a></p><p><a href="#contact">Contact</a></p></div>
+<div><h3>Contact</h3><p>9848321205</p><p>Visakhapatnam, Andhra Pradesh</p></div>
+</div><div class="container copyright">© 2026 RR Aircondition. All Rights Reserved.</div></footer>
+
+<div class="float"><a class="wa" href="https://wa.me/919848321205" target="_blank" aria-label="WhatsApp">◉</a><a class="call" href="tel:9848321205" aria-label="Call">☎</a></div>
+</body>
+</html>
